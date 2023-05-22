@@ -1,0 +1,167 @@
+ 
+ body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font: 1em;
+   font-family: 'Roboto', sans-serif;
+   min-height: 100vh;
+   overflow: hidden;
+ }
+
+ .container {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 0px 20px 2px rgb(0, 0, 0, 0.4);
+ }
+
+ .left {
+  color: #fff;
+  width: 40%;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+ }
+ 
+ .right {
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+ }
+
+.left h4 {
+  text-align: center;
+  color: #f7f7f7f7;
+}
+
+.score_left{
+  padding: 50px;
+  width: 74px;
+  height: 74px;
+  border-radius: 100%;
+  box-shadow: inset  1px 1px 12px 0px hsla(256, 72%, 46%, 1);
+  border-style: outset hsla(241, 72%, 46%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.big_score {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.small_score {
+  color: #d3d3d3;
+}
+
+.left_text p {
+  color: lightgray;
+}
+
+
+.score-icon{
+  display: flex;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.score-icon img {
+  padding-right: 5px;
+}
+
+.scores .black-text {
+  color: #222;
+  font-weight: bold;
+}
+
+.scores .grey {
+  color: rgba(87, 87, 87, 0.994);
+}
+
+.score-reaction {
+  background-color: hsl(0, 100%, 67%, 0.1);
+  color:hsl(0, 100%, 67%);
+}
+
+.score-memory {
+  background-color: hsl(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+.score-verbal {
+  background-color: hsl(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+.score-visual {
+  background-color: hsl(234, 85%, 45%, 0.1);
+  color:hsl(234, 85%, 45%);
+}
+
+.btn {
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  padding: 15px 30px;
+  margin-top: 30px;
+  color: #fff;
+  border-radius: 50px;
+}
+
+
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+     position: absolute;
+     bottom: 0;
+     margin-bottom: 70px;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+ @media (max-width: 760px) {
+  .left {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .right {
+    padding: 0;
+    width: 80%;
+  }
+
+  .left_text {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    border-radius: 0px;
+    overflow: hidden;
+    padding: 0;
+  }
+ }
